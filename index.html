@@ -1,0 +1,46 @@
+<!doctype html>
+<html lang="fr" class="scroll-smooth">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Noria — Compagnon d'étude pour élèves et étudiants</title>
+    <meta name="description" content="Noria rassemble cours, échéances et révisions pour apprendre activement avec un coach IA transparent guidé par vos propres supports." />
+    <meta property="og:title" content="Noria — Compagnon d'étude pour élèves et étudiants" />
+    <meta property="og:description" content="Noria rassemble cours, échéances et révisions pour apprendre activement avec un coach IA transparent guidé par vos propres supports." />
+    <meta property="og:type" content="website" />
+    <meta name="twitter:card" content="summary_large_image" />
+    <script>
+      // Polyfill/fix for environments or browser extensions attempting to assign to window.fetch
+      (function() {
+        try {
+          var _fetch = window.fetch ? window.fetch.bind(window) : undefined;
+          Object.defineProperty(window, 'fetch', {
+            get: function() {
+              return _fetch;
+            },
+            set: function(fn) {
+              _fetch = fn;
+            },
+            configurable: true,
+            enumerable: true
+          });
+        } catch (_) {}
+
+        // Prevent extension uncaught errors from interrupting application execution
+        window.addEventListener('error', function(event) {
+          if (event.filename && event.filename.indexOf('chrome-extension://') !== -1) {
+            event.preventDefault();
+            event.stopPropagation();
+          }
+        }, true);
+      })();
+    </script>
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Plus+Jakarta+Sans:ital,wght@0,300..800;1,300..800&family=JetBrains+Mono:wght@400;500;600&display=swap" rel="stylesheet">
+  </head>
+  <body class="bg-[#F8F9FC] text-[#0F172A] font-sans antialiased selection:bg-indigo-100 selection:text-indigo-900 min-h-screen">
+    <div id="root"></div>
+    <script type="module" src="/src/main.tsx"></script>
+  </body>
+</html>

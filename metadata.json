@@ -1,0 +1,6 @@
+{
+  "name": "Noria — Compagnon d'étude pour élèves et étudiants",
+  "description": "Noria rassemble cours, échéances et révisions pour apprendre activement avec un coach IA transparent guidé par vos propres supports.",
+  "requestFramePermissions": [],
+  "majorCapabilities": ["MAJOR_CAPABILITY_SERVER_SIDE_GEMINI_API"]
+}
